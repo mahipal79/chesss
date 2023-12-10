@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("feedbackForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            // You can add your code here to process the form submission, such as sending the data to a server or displaying a thank you message.
+            // For demonstration purposes, let's log the form data to the console.
+            console.log("Form submitted!");
+            console.log("Name: ", form.name.value);
+            console.log("Email: ", form.email.value);
+            console.log("Message: ", form.message.value);
+            form.reset();
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+</head>
+<body>
+    <h1>About Us</h1>
+
+    <p>Welcome to our chess website! We are a group of enthusiastic students who have developed this website as our web technology project under the guidance of Professor Ms. Mosam Patel. Our aim is to provide chess enthusiasts with a platform to learn, practice, and enjoy the game of chess.</p>
+
+    <h2>Acknowledgments</h2>
+
+    <p>We would like to express our gratitude to Professor Ms. Mosam Patel for her guidance and support throughout the development of this web technology project. Her expertise and insights have been invaluable in shaping this website into what it is today.</p>
+
+    <p>We would also like to thank our fellow classmates for their contributions and collaboration during this project. Their dedication and teamwork have made this endeavor a success.</p>
+
+    <h2>Contact Us</h2>
+
+    <p>If you have any questions, suggestions, or feedback regarding our chess website, please feel free to contact us. You can reach out to us through the FEEDBACK FORM provided on the website.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Let Us Know Your Feedback || Learning Robo</title>
+  </head>
+  <body>
+    <div id="panel" class="panel-container">
+      <strong>How satisfied are you with our <br /> customer support performance?</strong>
+      <div class="ratings-container">
+        <div class="rating">
+          <img src="https://image.flaticon.com/icons/svg/187/187150.svg" alt="">
+          <small>Unhappy</small>
+        </div>
+
+        <div class="rating">
+          <img src="https://image.flaticon.com/icons/svg/187/187136.svg" alt=""/>
+          <small>Neutral</small>
+        </div>
+
+        <div class="rating active">
+          <img src="https://image.flaticon.com/icons/svg/187/187133.svg" alt=""/>
+          <small>Satisfied</small>
+        </div>
+      </div>
+      <button class="btn" id="send">Send Review</button>
+    </div>
+    <div class="credit">Made with <span style="color:tomato">❤</span> by <a  href="https://www.learningrobo.com/">Learning Robo</a></div>
+    <script src="script.js"></script>
+  </body>
+</html>
